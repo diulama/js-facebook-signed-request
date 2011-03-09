@@ -6,3 +6,5 @@ This implementation is based as closely to the original PHP implementation as
 possible, and some functions were taken directly from php.js
 
 http://phpjs.org/
+
+Signature validation has yet to be implemented!!!
