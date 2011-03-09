@@ -1,0 +1,8 @@
+A way to read Facebook's signed_request in JavaScript.
+
+http://developers.facebook.com/blog/post/462
+
+This implementation is based as closely to the original PHP implementation as
+possible, and some functions were taken directly from php.js
+
+http://phpjs.org/
