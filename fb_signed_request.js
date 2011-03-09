@@ -5,10 +5,6 @@ http://developers.facebook.com/blog/post/462
 
 */
 
-if (!window.console) {
-  console = {};
-}
-
 /* Source: php.js *******************************************************/ 
 function utf8_decode (str_data) {
     // http://kevin.vanzonneveld.net
@@ -184,8 +180,7 @@ function parse_signed_request(signed_request, secret) {
   data = JSON.parse(payload);
   
   if (data.algorithm.toUpperCase() != 'HMAC-SHA256') {
-    console.log('Unknown algorithm. Expected HMAC-SHA256');
-    return false;
+    return 'Unknown algorithm. Expected HMAC-SHA256';
   }
   
   // TODO: Check signature!
