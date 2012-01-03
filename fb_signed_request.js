@@ -175,7 +175,7 @@ function parse_signed_request(signed_request, secret) {
   payload = base64_decode(payload);
   
   // Removing null character \0 from the JSON data
-  payload = payload.substring(0, payload.length - 1);
+  payload = payload.replace(/\0/g, "");
 
   data = JSON.parse(payload);
   
